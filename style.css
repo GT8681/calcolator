@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.calculetor{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 200px;
+    background-color: aquamarine;
+    margin: 0 auto;
+}
+.btm{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.btm:hover{
+background-color: aqua;
+}
+ .btm-C{
+    padding: 20px;
+
+ }
+ .btm-egual{
+    padding: 20px;
+ }
+ .input-display input{
+    background-color: blueviolet;
+    width: 200px;
+    height: 50px;
+
+ }
