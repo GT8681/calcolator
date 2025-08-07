@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    margin-top: 80px;
+}
 .calculetor{
     display: flex;
     flex-wrap: wrap;
