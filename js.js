@@ -1,28 +1,43 @@
-const buttons =document.querySelectorAll(".btm")
-const textDisplay = document.querySelector(".input-display")
+const buttons = document.querySelectorAll("button")
+const textDisplay = document.querySelector(".display")
 
 
-function clearDisplay(){
+
+function clearDisplay() {
     textDisplay.innerText = ""
 }
 
-function result{
-    const resultCalc = eval(textDispaly.innerText)
-    textDisplay.innerText = resultCalc
+function result() {
+    try {
+
+        const resultCalc = eval(textDisplay.innerText)
+        textDisplay.innerText = resultCalc
+
+
+    } catch {
+        textDisplay.innerText = "ERROR"
+    }
 }
 
-buttons.forEach(button =>{
-    button.addEventListener("click",() =>{
-        const value = button.getAttribute("data-value")
-       
 
-        if(value === "C"){
+
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        const value = button.getAttribute("data-value")
+
+
+        if (value === "C") {
             clearDisplay()
-        }else if(value==="="){
+        } else if (value === "=") {
             result()
 
-        }else{
-             textDisplay.innerText += value
+
+        } else {
+            textDisplay.innerText += value
+
         }
+
+
+
     })
 })
